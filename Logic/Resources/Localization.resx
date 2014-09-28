@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationModelBirthDate" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="ApplicationModelCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ApplicationModelCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ApplicationModelEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ApplicationModelEmailInvalid" xml:space="preserve">
+    <value>Invalid email</value>
+  </data>
+  <data name="ApplicationModelEnglishLevel" xml:space="preserve">
+    <value>Proficiency in english</value>
+  </data>
+  <data name="ApplicationModelLegalStatus" xml:space="preserve">
+    <value>Legal status</value>
+  </data>
+  <data name="ApplicationModelMotivation1" xml:space="preserve">
+    <value>Write about your experience in projects pertaining or directly related to the subject of the workshop</value>
+  </data>
+  <data name="ApplicationModelMotivation2" xml:space="preserve">
+    <value>Have you previously participated in similar workshops. If so, when and where?</value>
+  </data>
+  <data name="ApplicationModelMotivation3" xml:space="preserve">
+    <value>What motivates you to apply for participation in the workshop?</value>
+  </data>
+  <data name="ApplicationModelMotivation4" xml:space="preserve">
+    <value>How do you plan to use the experience gained in the workshop?</value>
+  </data>
+  <data name="ApplicationModelMotivation5" xml:space="preserve">
+    <value>What are you expectations from the workshop?</value>
+  </data>
+  <data name="ApplicationModelMotivation6" xml:space="preserve">
+    <value>Where did you find out about the workshop?</value>
+  </data>
+  <data name="ApplicationModelName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ApplicationModelOrganizationInfo" xml:space="preserve">
+    <value>About the organization</value>
+  </data>
+  <data name="ApplicationModelOrganizationName" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="ApplicationModelParticipantsNumber" xml:space="preserve">
+    <value>Number of participants</value>
+  </data>
+  <data name="ApplicationModelPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ApplicationModelProcessData" xml:space="preserve">
+    <value>I agree to data processing</value>
+  </data>
+  <data name="ApplicationModelProfession" xml:space="preserve">
+    <value>Profession</value>
+  </data>
+  <data name="ApplicationModelRequiredField" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="ApplicationModelSocialNetworkUrl" xml:space="preserve">
+    <value>Vk or facebook url</value>
+  </data>
+  <data name="ApplicationModelSurname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="ApplicationModelUrlInvalid" xml:space="preserve">
+    <value>Invalid url</value>
+  </data>
+  <data name="ApplicationModelVolunteeringMotivation" xml:space="preserve">
+    <value>Why are you interested in becoming a volunteer of the workshop?</value>
+  </data>
+  <data name="ApplicationModelWorkTimeRange" xml:space="preserve">
+    <value>Days and times in which you can be present</value>
+  </data>
+  <data name="DateTimeInvalid" xml:space="preserve">
+    <value>{0} is an invalid date format</value>
+  </data>
+  <data name="EnglishLevel_Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="EnglishLevel_Elementary" xml:space="preserve">
+    <value>Elementary</value>
+  </data>
+  <data name="EnglishLevel_Intermediate" xml:space="preserve">
+    <value>Intermediate</value>
+  </data>
+  <data name="EnglishLevel_PreIntermediate" xml:space="preserve">
+    <value>Pre-intermediate</value>
+  </data>
+  <data name="EnglishLevel_UpperIntermediate" xml:space="preserve">
+    <value>Upper-intermediate</value>
+  </data>
+  <data name="LegalStatus_NotRegisteredInitiative" xml:space="preserve">
+    <value>Not registered initiative</value>
+  </data>
+  <data name="LegalStatus_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="LegalStatus_PublicOrganization" xml:space="preserve">
+    <value>Public organization</value>
+  </data>
+  <data name="WorkShopApplicationErrors" xml:space="preserve">
+    <value>Please correct the fields marked in red</value>
+  </data>
+  <data name="WorkShopApplicationMotivation" xml:space="preserve">
+    <value>Motivation</value>
+  </data>
+  <data name="WorkShopApplicationPersonalData" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="WorkShopApplicationReceived" xml:space="preserve">
+    <value>Your application is received. Thank you for registration!</value>
+  </data>
+  <data name="WorkShopApplicationSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationEmailBody" xml:space="preserve">
+    <value>Your application for the first day of workshop "Regeneration of industrial buildings in Ukraine", which will be held at Jam Factory September 24 from 14:00 to 20:00, successfully accepted. Your number - {0}. Read more about the program &lt;a href="http://culture.in.ua/en/projects/regeneration-of-industrial-buildings/program/"&gt;here&lt;/a&gt;. Thank you for registration!</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationEmailSubject" xml:space="preserve">
+    <value>Registration for the first day of workshop</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationLimitExceeded" xml:space="preserve">
+    <value>Unfortunately number of places are limited. We can not register you.</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationReceived" xml:space="preserve">
+    <value>Thank you for the registration! Your application for the first day of workshop "Regeneration of industrial buildings in Ukraine" is received and we sent you the email with further info. Your number -  {0}. Please remember it, you will need to know it at the entrance to the event</value>
+  </data>
+</root>

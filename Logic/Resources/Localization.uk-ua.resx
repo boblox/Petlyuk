@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationModelBirthDate" xml:space="preserve">
+    <value>Дата народження</value>
+  </data>
+  <data name="ApplicationModelCity" xml:space="preserve">
+    <value>Місто</value>
+  </data>
+  <data name="ApplicationModelCountry" xml:space="preserve">
+    <value>Країна</value>
+  </data>
+  <data name="ApplicationModelEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ApplicationModelEmailInvalid" xml:space="preserve">
+    <value>Неправильний формат email-у</value>
+  </data>
+  <data name="ApplicationModelEnglishLevel" xml:space="preserve">
+    <value>Володіння англійською</value>
+  </data>
+  <data name="ApplicationModelLegalStatus" xml:space="preserve">
+    <value>Легальний статус</value>
+  </data>
+  <data name="ApplicationModelMotivation1" xml:space="preserve">
+    <value>Напишіть про свій досвід у реалізації проектів, дотичних або безпосередньо пов’язаних з тематикою воршопу</value>
+  </data>
+  <data name="ApplicationModelMotivation2" xml:space="preserve">
+    <value>Чи брали раніше участь у подібних воршопах. Якщо так то коли і де?</value>
+  </data>
+  <data name="ApplicationModelMotivation3" xml:space="preserve">
+    <value>Що спонукає Вас податися на участь у воркшопі</value>
+  </data>
+  <data name="ApplicationModelMotivation4" xml:space="preserve">
+    <value>Як плануєте використати отриманий досвід у воркшопі</value>
+  </data>
+  <data name="ApplicationModelMotivation5" xml:space="preserve">
+    <value>Ваші очікування від воркшопу</value>
+  </data>
+  <data name="ApplicationModelMotivation6" xml:space="preserve">
+    <value>Звідки дізналися про воркшоп?</value>
+  </data>
+  <data name="ApplicationModelName" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
+  <data name="ApplicationModelOrganizationInfo" xml:space="preserve">
+    <value>Інформація про організацію чи ініціативну групу, її цілі та структуру</value>
+  </data>
+  <data name="ApplicationModelOrganizationName" xml:space="preserve">
+    <value>Назва організації/ініціативи</value>
+  </data>
+  <data name="ApplicationModelParticipantsNumber" xml:space="preserve">
+    <value>Кількість учасників</value>
+  </data>
+  <data name="ApplicationModelPhone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="ApplicationModelProcessData" xml:space="preserve">
+    <value>Я погоджуюсь на обробку даних</value>
+  </data>
+  <data name="ApplicationModelProfession" xml:space="preserve">
+    <value>Професія/вид діяльності</value>
+  </data>
+  <data name="ApplicationModelRequiredField" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="ApplicationModelSocialNetworkUrl" xml:space="preserve">
+    <value>Адреса вашої сторінки у vk або facebook</value>
+  </data>
+  <data name="ApplicationModelSurname" xml:space="preserve">
+    <value>Прізвище</value>
+  </data>
+  <data name="ApplicationModelUrlInvalid" xml:space="preserve">
+    <value>Неправильний формат посилання</value>
+  </data>
+  <data name="ApplicationModelVolunteeringMotivation" xml:space="preserve">
+    <value>Чому Вам цікаво стати волонтером(-кою) у організації воркшопу?</value>
+  </data>
+  <data name="ApplicationModelWorkTimeRange" xml:space="preserve">
+    <value>Дні та години, у які ви можете бути присутні</value>
+  </data>
+  <data name="DateTimeInvalid" xml:space="preserve">
+    <value>{0} є неприпустимим форматом дати</value>
+  </data>
+  <data name="LegalStatus_NotRegisteredInitiative" xml:space="preserve">
+    <value>Не зареєстрована ініціатива</value>
+  </data>
+  <data name="LegalStatus_Other" xml:space="preserve">
+    <value>Інше</value>
+  </data>
+  <data name="LegalStatus_PublicOrganization" xml:space="preserve">
+    <value>Громадська організація</value>
+  </data>
+  <data name="WorkShopApplicationErrors" xml:space="preserve">
+    <value>Будь ласка, виправте поля відмічені червоним</value>
+  </data>
+  <data name="WorkShopApplicationMotivation" xml:space="preserve">
+    <value>Мотивація</value>
+  </data>
+  <data name="WorkShopApplicationPersonalData" xml:space="preserve">
+    <value>Особисті дані</value>
+  </data>
+  <data name="WorkShopApplicationReceived" xml:space="preserve">
+    <value>Ваша заявка успішно прийнята. Дякуємо за реєстрацію!</value>
+  </data>
+  <data name="WorkShopApplicationSubmit" xml:space="preserve">
+    <value>Надіслати</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationEmailBody" xml:space="preserve">
+    <value>Ваша заявка на перший день воркшопу “Регенерація індустріальних споруд в Україні”, яка проходитиме на Фабриці повидла 24 вересня з 14:00 до 20:00, успішно прийнята. Ваш номер - {0}. Детальніше про програму за &lt;a href="http://culture.in.ua/projects/regeneration-of-industrial-buildings/program/"&gt;посиланням&lt;/a&gt;. Дякуємо за реєстрацію!</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationEmailSubject" xml:space="preserve">
+    <value>Реєстрація на перший день воркшопу</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationLimitExceeded" xml:space="preserve">
+    <value>Нажаль кількість місць на дану подію обмежена. Ми не можемо вас зареєструвати.</value>
+  </data>
+  <data name="WorkShopFirstDayApplicationReceived" xml:space="preserve">
+    <value>Дякуємо за реєстрацію! Ваша заявка на перший день воркшопу “Регенерація індустріальних споруд в Україні” успішно прийнята. Ми надіслали вам листа з подальшою інформацією. Ваш номер - {0}. Будь ласка, запам'ятайте його, вам потрібно буде його знати при вході на подію </value>
+  </data>
+</root>
