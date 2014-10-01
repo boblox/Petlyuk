@@ -1,0 +1,21 @@
+﻿@inherits UmbracoTemplatePage
+<!-- Footer -->
+<footer class="footer-wrapper">
+    <div class="footer container">
+        @*<div class="row">
+            <div class="12u">
+                @{ Html.RenderPartial("umbSocial"); }
+            </div>
+        </div>*@
+        <div class="row">
+            <!-- Copyright -->
+            <div class="12u">
+                <div id="copyright">
+                    &copy; @DateTime.Now.Year @Umbraco.Field("copyright", recursive: true)
+                </div>
+            </div>
+            <!-- /Copyright -->
+        </div>
+    </div>
+</footer>
+<!-- /Footer -->

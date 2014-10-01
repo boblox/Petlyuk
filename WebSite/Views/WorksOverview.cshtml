@@ -1,0 +1,64 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    Layout = "umbLayout.cshtml";
+
+    var workItems = CurrentPage.WorkItems;
+}
+@helper RenderRow(dynamic workItem)
+{
+    var title = string.IsNullOrWhiteSpace(workItem.Title) ? workItem.Name : workItem.Title;
+    <section class="is-work-item">
+        <div class="row flush">
+            <div class="-1u 3u">
+                <h4><a href="@workItem.Url">@title</a></h4>
+                <span>@(((DateTime)workItem.Year).Year)</span>
+            </div>
+            <div class="4u">
+                <div class="row flush">
+                    <div class="-1u 10u">
+                        @*<a href="@workItem.Url"><img class="lazyOwl" data-src="@workItem.Image" /></a>*@
+                        <a href="@workItem.Url" class="image"><img src="@workItem.Image" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- Main -->
+<div class="main-wrapper">
+    <div class="main container">
+        <!-- Content -->
+        @*<div id="workItems" class="owl-carousel">
+                @{
+                    var groupedItems = ((IEnumerable<dynamic>)workItems).GroupBy(item => ((DateTime)item.Year).Year);
+                }
+                @foreach (var group in groupedItems)
+                {
+                    <article>
+                        @foreach (var workItem in group)
+                        {
+                            @RenderRow(workItem)
+                        }
+                    </article>
+                }
+            </div>*@
+
+        <div id="workItems">
+            @foreach (var workItem in workItems)
+            {
+                @RenderRow(workItem)
+            }
+        </div>
+        <!-- /Content -->
+    </div>
+</div>
+<!-- /Main -->
+@*<script type="text/javascript">
+        $(document).ready(function () {
+            $("#workItems").owlCarousel({
+                singleItem: true,
+                lazyLoad: true,
+                autoHeight: true
+            });
+        });
+    </script>*@

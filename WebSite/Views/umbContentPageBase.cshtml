@@ -2,34 +2,29 @@
 @{
     Layout = "umbLayout.cshtml";
 }
-<div id="main-wrapper">
-    <div id="main" class="container">
+<div class="main-wrapper">
+    @*@if (IsSectionDefined("Header"))
+    {
+        <header class="container">
+            @RenderSection("Header")
+        </header>
+    }*@
+    <div class="main container">
         <div class="row">
-            <div class="9u">
-                <div class="content content-left">
-                    <!-- Content -->
-                    <article class="is-page-content">
-                        @RenderSection("Body")
-                    </article>
-                    <!-- /Content -->
-                </div>
-            </div>
-            <div class="3u">
-                <div class="sidebar">
-                    <!-- Sidebar -->
-                    @RenderSection("Sidebar")
-                    <!-- /Sidebar -->
-                </div>
+            <div class="12u">
+                @if (IsSectionDefined("Header"))
+                {
+                    <header>
+                        @RenderSection("Header")
+                    </header>
+                }
+                <!-- Content -->
+                <article class="is-page-content">
+                    @RenderSection("Body")
+                </article>
+                <!-- /Content -->
             </div>
         </div>
-        @if (IsSectionDefined("Footer"))
-        {
-            <div class="row">
-                <div class="9u">
-                    @RenderSection("Footer")
-                </div>
-            </div>
-        }
     </div>
 </div>
 <!-- /Main -->

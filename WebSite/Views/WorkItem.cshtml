@@ -1,0 +1,48 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    Layout = "umbContentPageBase.cshtml";
+
+    // If the editor has not explicitly provided the "Page title" property page
+    // then just show the name of the page otherwise show the provided title
+    var pageTitle = string.IsNullOrWhiteSpace(CurrentPage.Title)
+        ? CurrentPage.Name
+        : CurrentPage.Title;
+
+    var carouselImagesStr = (string)CurrentPage.CarouselImages;
+    var imageIds = carouselImagesStr.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+    var carouselImages = Umbraco.Media(imageIds);
+}
+@section Header
+{
+    <h3 class="major"><span>@pageTitle</span></h3>
+}
+
+@section Body
+{
+    <section>
+        @CurrentPage.BodyText
+    </section>
+    <section>
+        <div class="row">
+            <div class="-1u 10u">
+                <div id="workItems" class="owl-carousel">
+                    @foreach (var image in carouselImages)
+                    {
+                        <img class="lazyOwl image" data-src="@image.Url" />
+                    }
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#workItems").owlCarousel({
+                singleItem: true,
+                lazyLoad: true,
+            });
+        });
+    </script>
+}
+

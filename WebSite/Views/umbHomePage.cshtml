@@ -1,24 +1,38 @@
+@using System.Linq;
 @inherits UmbracoTemplatePage
 @{
     Layout = "umbLayout.cshtml";
+
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+
+    var worksOverview = homePage.WorksOverviews.First();
+
+    var workItems = ((IEnumerable<dynamic>)worksOverview.WorkItems)
+        .OrderByDescending(x => x.Year);
 }
 
 <!-- Main -->
-<div id="main-wrapper">
-    <div id="main" class="container">
+<div class="main-wrapper">
+    <div class="main container">
         <div class="row">
-            <div class="9u">
-                @{ Html.RenderPartial("/Views/Partials/umbFeatures.cshtml"); }
-            </div>
-            <div class="3u">
-                @{Html.RenderPartial("umbLatestNewsWithHeaderWidget"); }
+            <div class="-1u 10u">
+                <div id="workItems" class="owl-carousel">
+                    @foreach (var workItem in workItems)
+                    {
+                        <a href="@workItem.Url" class="image"><img class="lazyOwl" data-src="@workItem.Image" /></a>
+                    }
+                </div>
             </div>
         </div>
-        @*<div class="row">
-                <div class="12u">
-                    @{Html.RenderPartial("umbNewsOverviewWidget"); }
-                </div>
-            </div>*@
     </div>
 </div>
 <!-- /Main -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#workItems").owlCarousel({
+            singleItem: true,
+            lazyLoad: true
+        });
+    });
+</script>

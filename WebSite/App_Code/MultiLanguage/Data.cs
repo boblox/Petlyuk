@@ -13,9 +13,11 @@ namespace Goyaweb.MultiLanguage
         public Data()
         {
         }
+        public int Id { get; set; }
         public string NativeName { get; set; }
         public string LanguageCode { get; set; }
         public string CountryCode { get; set; }
         public string Url { get; set; }
+        public string HomeUrl { get; set; }
     }
 }

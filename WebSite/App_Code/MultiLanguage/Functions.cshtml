@@ -19,10 +19,12 @@
         var url_lang = new Dictionary<string, string>();
         foreach (var lang in Language.GetAllAsList())
         {
-            Data data = new Data();         
+            Data data = new Data();
+            data.Id = lang.id;         
             data.NativeName = System.Globalization.CultureInfo.GetCultureInfo(lang.CultureAlias.Substring(0, 2)).NativeName;
             data.LanguageCode = lang.CultureAlias.Substring(0, 2);
             data.CountryCode = lang.CultureAlias.Substring(lang.CultureAlias.Length - 2).ToLower();
+            data.HomeUrl = "http://" + (domains.Where(d => d.Language.id == lang.id)).First().Name;
             if (nodelang == lang.id)
             {
                 data.Url = "";
@@ -35,7 +37,7 @@
                 }
                 else if ((domains.Where(d => d.Language.id == lang.id)).Count() > 0)
                 {
-                    data.Url = "http://" + (domains.Where(d => d.Language.id == lang.id)).First().Name;
+                    data.Url = data.HomeUrl;
                 }
             }
             if (data.Url != null)

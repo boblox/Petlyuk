@@ -1,13 +1,43 @@
-﻿@inherits UmbracoTemplatePage
+﻿@using Goyaweb.MultiLanguage
+@using umbraco.cms.businesslogic
+@inherits UmbracoTemplatePage
 @{
     var homePage = CurrentPage.AncestorsOrSelf(1).First();
+    var languageData = (List<Data>)MultiLanguage.Functions.GetUrlsAndLanguages(CurrentPage.Id);
 }
 <!-- Header with logo -->
 
-<div id="header-wrapper">
-    <div id="header" class="container" style="background: url('@(Umbraco.Field("headerImage", recursive:true))') center bottom no-repeat;">
-        <a id="header-logo"
-           href="@homePage.Url" style="background: url('@(Umbraco.Field("headerLogo", recursive:true))') no-repeat;"></a>
+<div class="header-wrapper">
+    <div class="header container">
+        <h2 class="header-title">
+
+            @foreach (var language in languageData.Select((data, index) => new { data, index }))
+            {
+                var siteName = new Dictionary.DictionaryItem("SiteName").Value(language.data.Id);
+                if (language.index != languageData.Count() - 1)
+                {
+                    siteName += " /";
+                }
+                if (language.index != 0)
+                {
+                    siteName = "/ " + siteName;
+                }
+
+                if (string.IsNullOrEmpty(language.data.Url))
+                {
+                    <a href="@language.data.HomeUrl" class="active">@siteName</a>
+                }
+                else
+                {
+                    <a href="@language.data.HomeUrl" class="non-active">@siteName</a>
+                }
+
+            }
+            @*<a href="@homePage.Url">@Umbraco.Field("siteName", recursive:true)</a>*@
+        </h2>
+        @*<div class="languageSwitcher">
+            @Umbraco.RenderMacro("MLLanguageSwitcher", new { rendertype = "List" })
+        </div>*@
+        @{ Html.RenderPartial("umbTopNavigation"); }
     </div>
 </div>
-<!-- /Header with logo  -->
