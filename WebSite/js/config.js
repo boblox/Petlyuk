@@ -7,11 +7,18 @@
 window._skel_config = {
     preset: 'standard',
     prefix: '/css/style',
-    resetCSS: true
+    resetCSS: true,
+    grid: { gutters: '2.5em' },
+    //breakpoints: {
+    //    desktop: { range: "1001-", containers: 1200 },
+    //    '1000px': { range: "481-1000", containers: 960 },
+    //    mobile: { range: "-480", containers: "fluid", lockViewport: true, grid: { collapse: true} }
+    //}
 };
 
 window._skel_panels_config = {
-    preset: 'standard'
+    preset: 'standard',
+    useTransform: false //need to set to false because we use absolute positioned elements
 };
 
 jQuery(function () {

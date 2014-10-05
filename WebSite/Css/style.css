@@ -16,6 +16,21 @@
     box-sizing: border-box;
 }
 
+/**********************************************
+/* Fixes for correct displaying of footer
+********************************************* */
+html, body {
+    height: 100%;
+}
+
+#skel-panels-pageWrapper {
+    min-height: 100%;
+}
+
+/**********************************************
+/* End of fixes for correct displaying of footer
+********************************************* */
+
 body {
     font-family: 'Segoe UI', sans-serif;
     font-weight: 400;
@@ -32,10 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-weight: 400;
-}
-
-h3, h4 {
-    color: black;
 }
 
 h4 {
@@ -64,8 +75,6 @@ h3.major {
         background: #fff;
         position: relative;
         display: inline-block;
-        border: 2px solid #6f5ff6;
-        border-radius: 10px;
     }
 
 a {
@@ -435,7 +444,6 @@ ul.meta {
 
 .header-title {
     position: relative;
-    display: inline-block;
     color: #6464d4;
 }
 
@@ -521,6 +529,15 @@ ul.meta {
 
     .is-page-content img {
         max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .is-page-content header {
+        color: #6464d4;
+    }
+
+    .is-page-content b, strong {
+        color: #6464d4;
     }
 
 /*********************************************************************************/
@@ -530,9 +547,9 @@ ul.meta {
 .footer-wrapper {
     border-top: solid 2px #8e84e2;
     text-align: center;
-}
-
-.footer > .row {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 /*********************************************************************************/

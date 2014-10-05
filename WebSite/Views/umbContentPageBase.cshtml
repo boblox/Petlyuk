@@ -12,14 +12,14 @@
     <div class="main container">
         <div class="row">
             <div class="12u">
-                @if (IsSectionDefined("Header"))
-                {
-                    <header>
-                        @RenderSection("Header")
-                    </header>
-                }
                 <!-- Content -->
                 <article class="is-page-content">
+                    @if (IsSectionDefined("Header"))
+                    {
+                        <header> 
+                            @RenderSection("Header")
+                        </header>
+                    }
                     @RenderSection("Body")
                 </article>
                 <!-- /Content -->

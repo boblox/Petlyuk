@@ -8,35 +8,8 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-/*body {
-    height: 100%;
-}*/
-
 body {
     min-width: 1200px;
-}
-
-/**********************************************
-/* Fixes for correct displaying of footer
-********************************************* */
-html, body {
-    height: 100%;
-}
-
-#skel-panels-pageWrapper {
-    min-height: 100%;
-}
-
-#skel-panels-defaultWrapper {
-    visibility: hidden;
-    display: none;
-}
-/**********************************************
-/* End of fixes for correct displaying of footer
-********************************************* */
-
-h1, h2, h3, h4, h5, h6 {
-    /*margin: 0 0 0.5em 0;*/
 }
 
 h2 {
@@ -47,17 +20,13 @@ h2 {
 
 h3 {
     line-height: 1.5em;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin: 0;
 }
 
-    h3.major {
-        margin: 2.0em 0 0 0;
-    }
-
         h3.major span {
-            top: -1.3em;
-            padding: 0.3em 0.5em 0.5em;
+            top: -1em;
+            padding: 0 0.3em 0;
         }
 
 h4 {
@@ -173,24 +142,32 @@ h4 {
 
 .main-wrapper {
     padding-top: 0.1px; /*Just to stop collapsing margins*/
-    padding-bottom: 3.7em; /*Fix for footer which positioning is absolute*/
+    padding-bottom: 2.8em; /*Fix for footer which positioning is absolute*/
 }
 
 .main {
-    padding: 1em 0;
-    /*min-height: 600px;*/
+    padding: 1em 0 2em 0;
 }
 
-    .main > .row {
-        /*padding: 2em 0;*/
-    }
+    /*.main > .row {
+        padding: 2em 0;
+    }*/
 
 /*********************************************************************************/
 /* Section + Article Types                                                       */
 /*********************************************************************************/
 .is-page-content {
-    padding-left: 2em;
-    padding-right: 2em;
+
+}
+
+.is-page-content header {
+    height: 2em;
+    margin-top: 1.5em;
+}
+
+.is-page-content section {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
 .is-work-item {
@@ -215,12 +192,6 @@ h4 {
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
-
-.footer-wrapper {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
 
 .footer {
     font-size: 0.9em;
