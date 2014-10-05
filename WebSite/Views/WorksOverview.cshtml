@@ -1,4 +1,5 @@
-﻿@inherits UmbracoTemplatePage
+﻿@using Logic.Helpers;
+@inherits UmbracoTemplatePage
 @{
     Layout = "umbLayout.cshtml";
 
@@ -17,7 +18,7 @@
                 <div class="row flush">
                     <div class="-1u 10u">
                         @*<a href="@workItem.Url"><img class="lazyOwl" data-src="@workItem.Image" /></a>*@
-                        <a href="@workItem.Url" class="image"><img src="@workItem.Image" /></a>
+                        <a href="@workItem.Url" class="image"><img src="@Html.GetThumbnailUrl((string)workItem.Image)" /></a>
                     </div>
                 </div>
             </div>

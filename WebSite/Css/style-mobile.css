@@ -90,6 +90,14 @@ article {
         height: auto !important;
     }
 
+    .is-work-item {
+        border-bottom: 1px solid #b3b3b3;
+    }
+
+    .is-work-item:last-child {
+        border-bottom: none;
+    }
+
 /*********************************************************************************/
 /* Language switcher                                                             */
 /*********************************************************************************/

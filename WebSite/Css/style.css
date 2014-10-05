@@ -68,7 +68,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h3.major {
     position: relative;
-    border-top: solid 2px #8e84e2;
+    /*border-top: solid 2px #8e84e2;*/
 }
 
     h3.major span {
@@ -172,7 +172,7 @@ input, textarea, select {
 
 .button {
     display: inline-block;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
