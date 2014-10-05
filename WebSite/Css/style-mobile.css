@@ -15,7 +15,7 @@ body {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.9em;
     line-height: 1.5em;
 }
 
@@ -63,13 +63,14 @@ article {
 }
 
 .header {
-    height: 5em;
+    height: 7.5em;
     text-align: center;
 }
 
 .header-title {
     display: inline-block;
     padding-top: 0.5em;
+    width: 7.5em;
 }
 
 /*********************************************************************************/

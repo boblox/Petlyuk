@@ -16,9 +16,7 @@
                 <article class="is-page-content">
                     @if (IsSectionDefined("Header"))
                     {
-                        <header> 
-                            @RenderSection("Header")
-                        </header>
+                        @RenderSection("Header")
                     }
                     @RenderSection("Body")
                 </article>
