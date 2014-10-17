@@ -26,26 +26,10 @@
         @CurrentPage.BodyText
     </section>
     <section>
-        <div class="row">
-            <div class="-1u 10u">
-                <div id="workItems" class="owl-carousel">
-                    @foreach (var image in carouselImages)
-                    {
-                        <img class="lazyOwl image" data-src="@image.Url" />
-                    }
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#workItems").owlCarousel({
-                    singleItem: true,
-                    lazyLoad: true,
-                    navigation: true,
-                    navigationText: ["<", ">"]
-            });
-            });
-        </script>
+        @{
+            var dict = new ViewDataDictionary { { "carouselImages", carouselImages } };
+            Html.RenderPartial("/Views/Partials/ImagesCarousel.cshtml", dict);
+        }
     </section>
 }
 

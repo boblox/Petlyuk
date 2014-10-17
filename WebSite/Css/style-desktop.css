@@ -1,4 +1,4 @@
-/*
+﻿/*
 	TXT 2.0 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -24,10 +24,10 @@ h3 {
     margin: 0;
 }
 
-        h3.major span {
-            top: -1em;
-            padding: 0 0.3em 0;
-        }
+    h3.major span {
+        top: -1em;
+        padding: 0 0.3em 0;
+    }
 
 h4 {
     line-height: 1.5em;
@@ -69,6 +69,13 @@ h4 {
     bottom: -0.7em;
     /*padding: 0 0.5em;*/
 }
+    .header-title .non-active {
+        transition: color 0.4s ease-in-out;
+    }
+
+        .header-title .non-active:hover {
+            color: #6464d4;
+        }
 
 /*********************************************************************************/
 /* Nav                                                                           */
@@ -96,13 +103,12 @@ h4 {
         /*border: 2px solid #6f5ff6;*/
         border-radius: 10px;
         background-color: white;
-        -moz-transition: top .15s ease-in-out;
-        -webkit-transition: top .15s ease-in-out;
-        -o-transition: top .15s ease-in-out;
-        -ms-transition: top .15s ease-in-out;
-        transition: top .15s ease-in-out;
-        /*text-decoration: underline;*/
+        transition: background-color 0.4s ease-in-out;
     }
+
+        #nav li:hover {
+            background: #b3b3b3;
+        }
 
         /*Common styling for menu item*/
         #nav li a {
@@ -112,15 +118,6 @@ h4 {
             padding: 0.2em 0.8em 0.4em 0.8em;
             outline: 0;
             color: black;
-            -moz-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-            -webkit-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-            -o-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-            -ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-            transition: background-color .075s ease-in-out, color .075s ease-in-out;
-        }
-
-        #nav li:hover {
-            background: #b3b3b3;
         }
 
     /*Zero level*/
@@ -150,7 +147,7 @@ h4 {
     padding: 1em 0 2em 0;
 }
 
-    /*.main > .row {
+/*.main > .row {
         padding: 2em 0;
     }*/
 
@@ -158,37 +155,37 @@ h4 {
 /* Section + Article Types                                                       */
 /*********************************************************************************/
 .is-page-content {
-
 }
 
-.is-page-content header {
-    height: 2em;
-    margin-top: 1.5em;
-}
+    .is-page-content header {
+        height: 2em;
+        margin-top: 1.5em;
+    }
 
-.is-page-content section {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-}
+    .is-page-content section {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
 
 .is-work-item {
     text-align: right;
     margin: 0;
-    padding-bottom: 1em; 
+    padding-bottom: 1em;
 }
 
-.is-work-item h4 a {
-    padding: 2px 4px;
-}
+    .is-work-item h4 a {
+        padding: 2px 4px;
+        transition: background-color 0.4s ease-in-out;
+    }
 
-.is-work-item h4 a:hover {
-    background-color: #b3b3b3;
-    border-radius: 5px;
-}
+        .is-work-item h4 a:hover {
+            background-color: #b3b3b3;
+            border-radius: 5px;
+        }
 
-.is-work-item span{
-    padding-right: 4px;
-}
+    .is-work-item span {
+        padding-right: 4px;
+    }
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -200,6 +197,45 @@ h4 {
 
     .footer > .row {
         padding: 0.6em 0;
+    }
+
+/*********************************************************************************/
+/* Owl Carousel                                                                  */
+/*********************************************************************************/
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.owl-carousel-prev, .owl-carousel-next {
+    position: absolute;
+    top: 45%;
+    background-color: #869791;
+    border-radius: 30px;
+    color: #fff;
+    opacity: 0.5;
+    padding: 0.1em 0.5em 0.3em 0.5em;
+    cursor: pointer;
+}
+
+    .owl-carousel-prev:hover, .owl-carousel-next:hover {
+        opacity: 1;
+    }
+
+.owl-carousel-prev {
+    left: -3em;
+}
+
+    .owl-carousel-prev:before {
+        content: "←";
+    }
+
+.owl-carousel-next {
+    right: -3em;
+}
+
+    .owl-carousel-next:after {
+        content: "→";
     }
 
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

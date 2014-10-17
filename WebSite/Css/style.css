@@ -444,23 +444,18 @@ ul.meta {
 
 .header-title {
     position: relative;
-    color: #6464d4;
+    cursor: pointer;
 }
 
     .header-title .active {
         float: left;
-        cursor: pointer;
+        color: #6464d4;
     }
 
     .header-title .non-active {
         color: #b3b3b3;
         float: left;
-        cursor: pointer;
     }
-
-        .header-title .non-active:hover {
-            color: #6464d4;
-        }
 
 /*********************************************************************************/
 /* Language switcher                                                             */

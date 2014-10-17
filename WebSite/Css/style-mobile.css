@@ -85,14 +85,13 @@ article {
         margin-top: 1.5em;
     }
 
-    .is-page-content img {
+    .is-page-content img, .is-page-content iframe {
         max-width: 100%;
-        height: auto !important;
     }
 
-    .is-work-item {
-        border-bottom: 1px solid #b3b3b3;
-    }
+.is-work-item {
+    border-bottom: 1px solid #b3b3b3;
+}
 
     .is-work-item:last-child {
         border-bottom: none;
